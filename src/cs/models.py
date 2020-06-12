@@ -7,9 +7,9 @@ class Team(models.Model):
         ('UG', 'UG'),
         ('PG', "PG"),
     )
-    YEAR_CHOICES = [(x,x) for x in range(int(datetime.datetime.now().year), 2000, -1)]
-    
-    year = models.CharField(max_length=10, choices= YEAR_CHOICES, unique=True)
+    YEAR_CHOICES = [(x, x) for x in range(int(datetime.datetime.now().year), 2000, -1)]
+
+    year = models.CharField(max_length=10, choices=YEAR_CHOICES)
     team_type = models.CharField(max_length=4, choices=TEAM_CHOICES)
     members = models.ManyToManyField("oauth.UserProfile")
 
