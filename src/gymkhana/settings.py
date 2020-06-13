@@ -53,7 +53,7 @@ INSTALLED_APPS = [
     'hitcount',
     'django_cleanup',
     'oauth.apps.OauthConfig',
-    'counsellingteam.apps.CounsellingteamConfig',
+    'counsellingTeam.apps.CounsellingTeamConfig',
     'main.apps.MainConfig',
     'forum.apps.ForumConfig',
     'events.apps.EventsConfig',
